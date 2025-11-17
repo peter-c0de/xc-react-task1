@@ -44,37 +44,62 @@ ______________
 
 ## 📦 Step 3: Update package.json
 Here’s the full example of what your package.json should include:
+
 {
+
   "name": "my-vite-app",
+
   "version": "1.0.0",
+
   "private": true,
+
   "homepage": "https://your-username.github.io/my-vite-app",
+
   "scripts": {
+
     "dev": "vite",
+
     "build": "vite build",
+
     "preview": "vite preview",
+
     "predeploy": "npm run build",
+
     "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+
   "devDependencies": {
+
     "@vitejs/plugin-react": "^4.0.0",
+
     "vite": "^5.0.0",
+
     "gh-pages": "^6.0.0"
+
   }
+
 }
+
 Replace "homepage" with your actual GitHub Pages URL.
+
 ______________
 
 ## 🚀 Step 4: Deploy to GitHub Pages
 npm run deploy
+
 This will:
+
 •	Build your app into the dist/ folder
+
 •	Push it to the gh-pages branch on GitHub
+
 •	Your site will be live at: 
-•	https://your-username.github.io/my-vite-app/
+
+https://your-username.github.io/my-vite-app/
 
 
