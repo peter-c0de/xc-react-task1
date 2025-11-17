@@ -17,23 +17,32 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ------------------------------------------------------------------------------------------------------------------
 
+# React on Github Pages
 
-🛠 Step 1: Install gh-pages
+## 🛠 Step 1: Install gh-pages
 npm install --save-dev gh-pages
 ______________
 
-🧠 Step 2: Update vite.config.js
+## 🧠 Step 2: Update vite.config.js
 Edit vite.config.js and add the base option:
+
 import { defineConfig } from 'vite';
+
 import react from '@vitejs/plugin-react';
 
+
+
 export default defineConfig({
+
   base: '/my-vite-app/', // 👈 Must match your repo name
+
   plugins: [react()],
+
 });
 ______________
 
-📦 Step 3: Update package.json
+
+## 📦 Step 3: Update package.json
 Here’s the full example of what your package.json should include:
 {
   "name": "my-vite-app",
@@ -60,7 +69,7 @@ Here’s the full example of what your package.json should include:
 Replace "homepage" with your actual GitHub Pages URL.
 ______________
 
-🚀 Step 4: Deploy to GitHub Pages
+## 🚀 Step 4: Deploy to GitHub Pages
 npm run deploy
 This will:
 •	Build your app into the dist/ folder
