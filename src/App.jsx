@@ -4,6 +4,12 @@ import "./App.css";
 function App() {
   const [position, setPosition] = useState(0);
 
+  const reset = () => {
+    setPosition(0);
+    console.log("Reset: ", 0);
+
+  };
+
   const moveRight = () => {
     setPosition(position+20);
     console.log("New Position: ", position+20);
@@ -26,6 +32,7 @@ function App() {
       ></div>
 
       <div className="buttons">
+        <button onClick={reset}>Reset</button>
         <button onClick={moveLeft}>Move Left</button>
         <button onClick={moveRight}>Move Right</button>
       </div>
