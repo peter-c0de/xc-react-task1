@@ -5,15 +5,14 @@ function App() {
   const [position, setPosition] = useState(0);
 
   const moveRight = () => {
-    setPosition((prev) => prev + 20);
+    setPosition(position+20);
     console.log("New Position: ", position+20);
 
   };
 
   const moveLeft = () => {
-    
     if ( position > 0 )  {
-      setPosition((prev) => prev - 20);
+      setPosition(position-20);
       console.log("New Position: ", position-20);
     }
 
