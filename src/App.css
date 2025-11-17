@@ -1,0 +1,19 @@
+.container {
+  padding: 40px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  position: relative;
+  transition: 0.2s;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin-right: 10px;
+}
