@@ -5,7 +5,7 @@
 .box {
   width: 150px;
   height: 150px;
-  background-color: red;
+  background-color: purple;
   position: relative;
   transition: 0.2s;
 }
